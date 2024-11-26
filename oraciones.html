@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oraciones</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f8fa;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #34495e;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            padding: 8px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #1abc9c;
+            border-radius: 4px;
+        }
+
+        /* Main content */
+        .content {
+            margin: 40px auto;
+            padding: 40px;
+            max-width: 1100px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #2980b9;
+        }
+
+        .text {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #7f8c8d;
+        }
+
+        .text ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .text p {
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Quiz Section */
+        .quiz {
+            margin: 40px auto;
+            padding: 40px;
+            max-width: 1100px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        .question {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .answers label {
+            font-size: 16px;
+            color: #7f8c8d;
+            display: block;
+            margin-bottom: 10px;
+            padding: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .answers label:hover {
+            background-color: #ecf0f1;
+            border-radius: 4px;
+        }
+
+        .answers input {
+            margin-right: 10px;
+        }
+
+        .answer {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #16a085;
+        }
+
+        .answer.incorrect {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Curso de Oraciones en Inglés</h1>
+    </header>
+    
+    <nav>
+        <a href="#lesson1">Lección 1</a>
+        <a href="#lesson2">Lección 2</a>
+        <a href="#lesson3">Lección 3</a>
+        <a href="#lesson4">Lección 4</a>
+        <a href="#lesson5">Lección 5</a>
+        <a href="#lesson6">Lección 6</a>
+        <a href="#lesson7">Lección 7</a>
+    </nav>
+    
+    <main>
+        <!-- Lección 1 Content -->
+        <div id="lesson1" class="content">
+            <h1><b>Lección 1:</b> Oraciones Afirmativas Simples</h1>
+            <div class="text">
+                <p>En esta lección aprenderás a construir oraciones afirmativas simples en inglés.</p>
+                <ul>
+                    <li>I am a student. – Yo soy un estudiante.</li>
+                    <li>She is my friend. – Ella es mi amiga.</li>
+                    <li>They are teachers. – Ellos son maestros.</li>
+                    <li>We like movies. – Nos gustan las películas.</li>
+                    <li>You speak English. – Tú hablas inglés.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lección 2 Content -->
+        <div id="lesson2" class="content">
+            <h1><b>Lección 2:</b> Oraciones Negativas</h1>
+            <div class="text">
+                <p>Aprenderemos cómo negar oraciones usando el verbo "do" o "be" en inglés.</p>
+                <ul>
+                    <li>I do not like pizza. – No me gusta la pizza.</li>
+                    <li>He is not a teacher. – Él no es un maestro.</li>
+                    <li>They do not speak Spanish. – Ellos no hablan español.</li>
+                    <li>We are not ready. – No estamos listos.</li>
+                    <li>She does not want to go. – Ella no quiere ir.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lección 3 Content -->
+        <div id="lesson3" class="content">
+            <h1><b>Lección 3:</b> Oraciones Interrogativas con "Do" y "Be"</h1>
+            <div class="text">
+                <p>En esta lección veremos cómo hacer preguntas con los verbos "do" y "be".</p>
+                <ul>
+                    <li>Do you like music? – ¿Te gusta la música?</li>
+                    <li>Is she your sister? – ¿Es ella tu hermana?</li>
+                    <li>Do they have a car? – ¿Tienen ellos un coche?</li>
+                    <li>Are you ready? – ¿Estás listo?</li>
+                    <li>Do you understand? – ¿Entiendes?</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lección 4 Content -->
+        <div id="lesson4" class="content">
+            <h1><b>Lección 4:</b> Oraciones con Modal Verbs (Can, Should, Must)</h1>
+            <div class="text">
+                <p>Aprende a usar los verbos modales en oraciones.</p>
+                <ul>
+                    <li>I can swim. – Yo puedo nadar.</li>
+                    <li>You should study. – Deberías estudiar.</li>
+                    <li>He must work hard. – Él debe trabajar duro.</li>
+                    <li>We can go to the park. – Podemos ir al parque.</li>
+                    <li>She should call her mother. – Ella debería llamar a su madre.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lección 5 Content -->
+        <div id="lesson5" class="content">
+            <h1><b>Lección 5:</b> Oraciones con "There is" y "There are"</h1>
+            <div class="text">
+                <p>En esta lección aprenderás a usar "there is" y "there are" para hablar de la existencia de algo.</p>
+                <ul>
+                    <li>There is a book on the table. – Hay un libro sobre la mesa.</li>
+                    <li>There are many people in the room. – Hay mucha gente en la sala.</li>
+                    <li>There is a cat under the chair. – Hay un gato bajo la silla.</li>
+                    <li>There are two cars outside. – Hay dos coches afuera.</li>
+                    <li>There is a problem. – Hay un problema.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lección 6 Content -->
+        <div id="lesson6" class="content">
+            <h1><b>Lección 6:</b> Oraciones Condicionales (If)</h1>
+            <div class="text">
+                <p>Aprende a formar oraciones condicionales usando "if".</p>
+                <ul>
+                    <li>If it rains, I will stay home. – Si llueve, me quedaré en casa.</li>
+                    <li>If you study, you will pass the test. – Si estudias, pasarás el examen.</li>
+                    <li>If I were you, I would go. – Si yo fuera tú, iría.</li>
+                    <li>If she calls, tell her I’m busy. – Si ella llama, dile que estoy ocupado.</li>
+                    <li>If they invite us, we will go. – Si nos invitan, iremos.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lección 7 Content -->
+        <div id="lesson7" class="content">
+            <h1><b>Lección 7:</b> Resumen y Consejos Prácticos</h1>
+            <div class="text">
+                <p>Recuerda que practicar oraciones es fundamental para mejorar tu fluidez. Sigue estos consejos:</p>
+                <ul>
+                    <li>Practica las oraciones con un compañero.</li>
+                    <li>Escucha cómo los hablantes nativos construyen oraciones.</li>
+                    <li>Haz ejercicios diariamente.</li>
+                    <li>No tengas miedo de cometer errores, ¡es parte del aprendizaje!</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Ejercicios de práctica -->
+        <div class="quiz">
+            <h2>Práctica:</h2>
+
+            <!-- Question 1 -->
+            <div class="question">1. How do you say "Yo soy un estudiante" in English?</div>
+            <div class="answers">
+                <label>
+                    <input type="radio" name="question1" value="incorrect" onclick="checkAnswer(this)"> I am a teacher.
+                </label>
+                <label>
+                    <input type="radio" name="question1" value="correct" onclick="checkAnswer(this)"> I am a student.
+                </label>
+            </div>
+            <div id="answer1" class="answer"></div>
+
+            <!-- Question 2 -->
+            <div class="question">2. How do you say "No me gusta la pizza" in English?</div>
+            <div class="answers">
+                <label>
+                    <input type="radio" name="question2" value="incorrect" onclick="checkAnswer(this)"> I like pizza.
+                </label>
+                <label>
+                    <input type="radio" name="question2" value="correct" onclick="checkAnswer(this)"> I do not like pizza.
+                </label>
+            </div>
+            <div id="answer2" class="answer"></div>
+
+            <!-- Question 3 -->
+            <div class="question">3. How do you ask "¿Te gusta la música?" in English?</div>
+            <div class="answers">
+                <label>
+                    <input type="radio" name="question3" value="incorrect" onclick="checkAnswer(this)"> Do you have a book?
+                </label>
+                <label>
+                    <input type="radio" name="question3" value="correct" onclick="checkAnswer(this)"> Do you like music?
+                </label>
+            </div>
+            <div id="answer3" class="answer"></div>
+
+            <!-- Question 4 -->
+            <div class="question">4. How do you say "Ella no es mi hermana" in English?</div>
+            <div class="answers">
+                <label>
+                    <input type="radio" name="question4" value="incorrect" onclick="checkAnswer(this)"> She is my friend.
+                </label>
+                <label>
+                    <input type="radio" name="question4" value="correct" onclick="checkAnswer(this)"> She is not my sister.
+                </label>
+            </div>
+            <div id="answer4" class="answer"></div>
+
+            <!-- Question 5 -->
+            <div class="question">5. How do you say "Ellos deben estudiar más" in English?</div>
+            <div class="answers">
+                <label>
+                    <input type="radio" name="question5" value="incorrect" onclick="checkAnswer(this)"> They can study more.
+                </label>
+                <label>
+                    <input type="radio" name="question5" value="correct" onclick="checkAnswer(this)"> They must study more.
+                </label>
+            </div>
+            <div id="answer5" class="answer"></div>
+
+            <!-- Question 6 -->
+            <div class="question">6. How do you say "Hay dos coches afuera" in English?</div>
+            <div class="answers">
+                <label>
+                    <input type="radio" name="question6" value="incorrect" onclick="checkAnswer(this)"> There is a car outside.
+                </label>
+                <label>
+                    <input type="radio" name="question6" value="correct" onclick="checkAnswer(this)"> There are two cars outside.
+                </label>
+            </div>
+            <div id="answer6" class="answer"></div>
+
+            <!-- Question 7 -->
+            <div class="question">7. How do you say "Si llueve, me quedaré en casa" in English?</div>
+            <div class="answers">
+                <label>
+                    <input type="radio" name="question7" value="incorrect" onclick="checkAnswer(this)"> If I go, I will stay home.
+                </label>
+                <label>
+                    <input type="radio" name="question7" value="correct" onclick="checkAnswer(this)"> If it rains, I will stay home.
+                </label>
+            </div>
+            <div id="answer7" class="answer"></div>
+
+            <!-- Question 8 -->
+            <div class="question">8. How do you say "Yo puedo nadar" in English?</div>
+            <div class="answers">
+                <label>
+                    <input type="radio" name="question8" value="incorrect" onclick="checkAnswer(this)"> I can dance.
+                </label>
+                <label>
+                    <input type="radio" name="question8" value="correct" onclick="checkAnswer(this)"> I can swim.
+                </label>
+            </div>
+            <div id="answer8" class="answer"></div>
+
+            <!-- Question 9 -->
+            <div class="question">9. How do you say "Si estudio, aprobaré el examen" in English?</div>
+            <div class="answers">
+                <label>
+                    <input type="radio" name="question9" value="incorrect" onclick="checkAnswer(this)"> If I study, I will pass the test.
+                </label>
+                <label>
+                    <input type="radio" name="question9" value="correct" onclick="checkAnswer(this)"> If I study, I will pass the test.
+                </label>
+            </div>
+            <div id="answer9" class="answer"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Curso de Inglés - Oraciones - 2024</p>
+    </footer>
+
+    <script>
+        function checkAnswer(answer) {
+            const correctAnswer = "correct";
+            const questionNum = answer.name.slice(-1); // Get the question number
+            const feedback = document.getElementById(`answer${questionNum}`);
+            if (answer.value === correctAnswer) {
+                feedback.textContent = "¡Correct.";
+                feedback.style.color = "green";
+                feedback.className = "answer";
+            } else {
+                feedback.textContent = "Incorrect. " ;
+                feedback.style.color = "red";
+                feedback.className = "answer incorrect";
+            }
+        }
+    </script>
+</body>
+</html>

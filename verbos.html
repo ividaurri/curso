@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LVerbos</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f8fa;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #34495e;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            padding: 8px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #1abc9c;
+            border-radius: 4px;
+        }
+
+        /* Main content */
+        .content {
+            margin: 40px auto;
+            padding: 40px;
+            max-width: 1100px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #2980b9;
+        }
+
+        .text {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #7f8c8d;
+        }
+
+        .text ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .text p {
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Quiz Section */
+        .quiz {
+            margin: 40px auto;
+            padding: 40px;
+            max-width: 1100px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        .question {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .answers label {
+            font-size: 16px;
+            color: #7f8c8d;
+            display: block;
+            margin-bottom: 10px;
+            padding: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .answers label:hover {
+            background-color: #ecf0f1;
+            border-radius: 4px;
+        }
+
+        .answers input {
+            margin-right: 10px;
+        }
+
+        .answer {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #16a085;
+        }
+
+        .answer.incorrect {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Lecciones de Verbos</h1>
+    </header>
+    
+    <nav>
+        <a href="#lesson1">Lección 1</a>
+        <a href="#lesson2">Lección 2</a>
+        <a href="#lesson3">Lección 3</a>
+        <a href="#lesson4">Lección 4</a>
+        <a href="#lesson5">Lección 5</a>
+        <a href="#lesson6">Lección 6</a>
+        <a href="#lesson7">Lección 7</a>
+    </nav>
+    
+    <main>
+        <!-- Lección 1 Content -->
+        <div id="lesson1" class="content">
+            <h1><b>Lección 1:</b> El verbo "to be"</h1>
+            <div class="text">
+                <p>En esta lección, vamos a aprender sobre el verbo "to be" en inglés. Este verbo se utiliza para expresar identidad, estados o características.</p>
+                <ul>
+                    <li><b>Ejemplos de uso:</b></li>
+                    <li>I am a student. (Soy un estudiante.)</li>
+                    <li>She is happy. (Ella está feliz.)</li>
+                    <li>They are teachers. (Ellos son maestros.)</li>
+                </ul>
+                <p>En inglés, el verbo "to be" se conjuga según el sujeto:</p>
+                <ul>
+                    <li>I am</li>
+                    <li>You are</li>
+                    <li>He/She/It is</li>
+                    <li>We are</li>
+                    <li>You are</li>
+                    <li>They are</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lección 2 Content -->
+        <div id="lesson2" class="content">
+            <h1><b>Lección 2:</b> Verbos regulares</h1>
+            <div class="text">
+                <p>Los verbos regulares son aquellos que siguen una regla para formar su pasado y participio. En general, basta con agregar "-ed" al verbo en su forma base.</p>
+                <ul>
+                    <li>Ejemplos: walk → walked, play → played</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lección 3 Content -->
+        <div id="lesson3" class="content">
+            <h1><b>Lección 3:</b> Verbos irregulares</h1>
+            <div class="text">
+                <p>Los verbos irregulares no siguen una regla específica en su conjugación. Cada verbo tiene su forma única en el pasado y participio.</p>
+                <ul>
+                    <li>Ejemplos: go → went, eat → ate</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lección 4 Content -->
+        <div id="lesson4" class="content">
+            <h1><b>Lección 4:</b> Tiempos verbales</h1>
+            <div class="text">
+                <p>Los verbos se conjugan en diferentes tiempos verbales para indicar cuándo ocurre la acción. Los tiempos más comunes son el presente, el pasado y el futuro.</p>
+                <ul>
+                    <li>Presente: I walk (yo camino)</li>
+                    <li>Pasado: I walked (yo caminé)</li>
+                    <li>Futuro: I will walk (yo caminaré)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lección 5 Content -->
+        <div id="lesson5" class="content">
+            <h1><b>Lección 5:</b> Verbos auxiliares</h1>
+            <div class="text">
+                <p>Los verbos auxiliares se utilizan con los verbos principales para formar preguntas, negaciones y tiempos compuestos.</p>
+                <ul>
+                    <li>Ejemplos: am, is, are, do, have</li>
+                    <li>Ejemplo de uso: I am eating (estoy comiendo)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lección 6 Content -->
+        <div id="lesson6" class="content">
+            <h1><b>Lección 6:</b> Verbos modales</h1>
+            <div class="text">
+                <p>Los verbos modales se utilizan para expresar habilidad, posibilidad, permiso u obligación.</p>
+                <ul>
+                    <li>Ejemplos: can (puedo), could (podía), must (debo), should (debería)</li>
+                    <li>Ejemplo: You must study for the test (Debes estudiar para el examen)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lección 7 Content -->
+        <div id="lesson7" class="content">
+            <h1><b>Lección 7:</b> El presente continuo</h1>
+            <div class="text">
+                <p>El presente continuo se utiliza para describir acciones que están ocurriendo en el momento de hablar. Se forma con el verbo "to be" y el verbo principal en su forma "-ing".</p>
+                <ul>
+                    <li>Ejemplo: I am eating (estoy comiendo)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="quiz">
+            <h2>Test Your Verb Knowledge</h2>
+    
+            <div class="question">
+                1. Which of the following is a regular verb?
+            </div>
+            <div class="answers" data-correct-answer="worked" data-answer-id="answer1">
+                <label><input type="radio" name="q1" value="worked"> worked</label>
+                <label><input type="radio" name="q1" value="went"> went</label>
+                <label><input type="radio" name="q1" value="ate"> ate</label>
+            </div>
+            <div class="answer" id="answer1"></div>
+    
+            <div class="question">
+                2. What is the past tense of "run"?
+            </div>
+            <div class="answers" data-correct-answer="ran" data-answer-id="answer2">
+                <label><input type="radio" name="q2" value="run"> run</label>
+                <label><input type="radio" name="q2" value="ran"> ran</label>
+                <label><input type="radio" name="q2" value="runned"> runned</label>
+            </div>
+            <div class="answer" id="answer2"></div>
+    
+            <div class="question">
+                3. What is the past tense of "be"?
+            </div>
+            <div class="answers" data-correct-answer="was" data-answer-id="answer3">
+                <label><input type="radio" name="q3" value="was"> was</label>
+                <label><input type="radio" name="q3" value="were"> were</label>
+                <label><input type="radio" name="q3" value="been"> been</label>
+            </div>
+            <div class="answer" id="answer3"></div>
+    
+            <div class="question">
+                4. How do you form the present continuous tense of "eat"?
+            </div>
+            <div class="answers" data-correct-answer="am eating" data-answer-id="answer4">
+                <label><input type="radio" name="q4" value="am eating"> am eating</label>
+                <label><input type="radio" name="q4" value="eat"> eat</label>
+                <label><input type="radio" name="q4" value="eaten"> eaten</label>
+            </div>
+            <div class="answer" id="answer4"></div>
+    
+            <div class="question">
+                5. Which of these sentences is correct?
+            </div>
+            <div class="answers" data-correct-answer="I am not happy" data-answer-id="answer5">
+                <label><input type="radio" name="q5" value="I am not happy"> I am not happy</label>
+                <label><input type="radio" name="q5" value="Am not I happy"> Am not I happy</label>
+            </div>
+            <div class="answer" id="answer5"></div>
+    
+            <div class="question">
+                6. What is the past tense of "eat"?
+            </div>
+            <div class="answers" data-correct-answer="ate" data-answer-id="answer6">
+                <label><input type="radio" name="q6" value="ate"> ate</label>
+                <label><input type="radio" name="q6" value="eaten"> eaten</label>
+                <label><input type="radio" name="q6" value="ate"> eat</label>
+            </div>
+            <div class="answer" id="answer6"></div>
+    
+            <div class="question">
+                7. What is the correct conjugation of "to be" for "I"?
+            </div>
+            <div class="answers" data-correct-answer="am" data-answer-id="answer7">
+                <label><input type="radio" name="q7" value="am"> am</label>
+                <label><input type="radio" name="q7" value="is"> is</label>
+                <label><input type="radio" name="q7" value="are"> are</label>
+            </div>
+            <div class="answer" id="answer7"></div>
+    
+            <div class="question">
+                8. How do you form the past tense of "work"?
+            </div>
+            <div class="answers" data-correct-answer="worked" data-answer-id="answer8">
+                <label><input type="radio" name="q8" value="worked"> worked</label>
+                <label><input type="radio" name="q8" value="work"> work</label>
+                <label><input type="radio" name="q8" value="works"> works</label>
+            </div>
+            <div class="answer" id="answer8"></div>
+    
+            <div class="question">
+                9. What is the correct conjugation of "to be" for "They"?
+            </div>
+            <div class="answers" data-correct-answer="are" data-answer-id="answer9">
+                <label><input type="radio" name="q9" value="are"> are</label>
+                <label><input type="radio" name="q9" value="is"> is</label>
+                <label><input type="radio" name="q9" value="are"> are</label>
+            </div>
+            <div class="answer" id="answer9"></div>
+        </div>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Seleccionamos todas las respuestas en la página
+                const answerSections = document.querySelectorAll('.answers');
+    
+                answerSections.forEach((section) => {
+                    // Añadimos un event listener para cada sección de respuestas
+                    section.addEventListener('change', (event) => {
+                        // Determinamos cuál es la respuesta correcta
+                        const correctAnswer = section.getAttribute('data-correct-answer');
+                        // Obtenemos el input seleccionado
+                        const selectedAnswer = event.target.value;
+                        // Encontramos el elemento de respuesta correspondiente
+                        const answerId = section.getAttribute('data-answer-id');
+                        const answerElement = document.getElementById(answerId);
+    
+                        // Comprobamos si la respuesta seleccionada es correcta
+                        if (selectedAnswer === correctAnswer) {
+                            answerElement.textContent = "Correct.";
+                            answerElement.style.color="green";
+                            answerElement.className = "answer correct"; // Aplica la clase correcta
+                        } else {
+                            answerElement.textContent = 'Incorrect.';
+                            answerElement.style.color="red";
+                            answerElement.className = "answer incorrect"; // Aplica la clase incorrecta
+                        }
+                    });
+                });
+            });
+        </script>
+
+    
+    </body>
+    </html>

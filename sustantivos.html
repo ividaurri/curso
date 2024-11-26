@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sustantivos</title>
+    <style>
+        /* Estilos globales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f8fa; /* Fondo claro y profesional */
+            color: #333333; /* Texto oscuro */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Cabecera */
+        header {
+            background-color: #2c3e50; /* Azul oscuro */
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background-color: #34495e; /* Gris oscuro */
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #ecf0f1; /* Blanco suave */
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            padding: 8px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #1abc9c; /* Verde claro cuando pasa el mouse */
+            border-radius: 4px;
+        }
+
+        /* Estilo principal */
+        .contenido {
+            margin: 40px auto;
+            padding: 40px;
+            max-width: 1100px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #2c3e50; /* Azul oscuro para encabezados */
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #2980b9; /* Azul más claro */
+        }
+
+        .texto {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #7f8c8d; /* Gris suave para los textos */
+        }
+
+        .texto ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .texto p {
+            margin-bottom: 15px;
+        }
+
+        /* Estilo de pie de página */
+        footer {
+            background-color: #2c3e50; /* Azul oscuro */
+            color: #ecf0f1; /* Blanco */
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Resposividad para dispositivos móviles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 26px;
+            }
+
+            nav a {
+                font-size: 16px;
+                margin: 0 10px;
+            }
+
+            .contenido {
+                padding: 20px;
+                margin: 20px;
+            }
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f8fa; /* Fondo claro y profesional */
+            color: #333333; /* Texto oscuro */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Cabecera */
+        header {
+            background-color: #2c3e50; /* Azul oscuro */
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background-color: #34495e; /* Gris oscuro */
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #ecf0f1; /* Blanco suave */
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            padding: 8px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #1abc9c; /* Verde claro cuando pasa el mouse */
+            border-radius: 4px;
+        }
+
+        /* Estilo principal */
+        .contenido {
+            margin: 40px auto;
+            padding: 40px;
+            max-width: 1100px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #2c3e50; /* Azul oscuro para encabezados */
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #2980b9; /* Azul más claro */
+        }
+
+        .texto {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #7f8c8d; /* Gris suave para los textos */
+        }
+
+        .texto ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .texto p {
+            margin-bottom: 15px;
+        }
+
+        /* Estilo de pie de página */
+        footer {
+            background-color: #2c3e50; /* Azul oscuro */
+            color: #ecf0f1; /* Blanco */
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Sección de preguntas */
+        .quiz {
+            margin: 40px auto;
+            padding: 40px;
+            max-width: 1100px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz h2 {
+            color: #2c3e50; /* Azul oscuro */
+            margin-bottom: 30px;
+        }
+
+        .question {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .answers label {
+            font-size: 16px;
+            color: #7f8c8d;
+            display: block;
+            margin-bottom: 10px;
+            padding: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .answers label:hover {
+            background-color: #ecf0f1; /* Fondo al pasar el mouse */
+            border-radius: 4px;
+        }
+
+        .answers input {
+            margin-right: 10px;
+        }
+
+        .answer {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #16a085;
+        }
+
+        .answer.incorrect {
+            color: #e74c3c;
+        }
+
+        /* Resposividad para dispositivos móviles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 26px;
+            }
+
+            nav a {
+                font-size: 16px;
+                margin: 0 10px;
+            }
+
+            .contenido, .quiz {
+                padding: 20px;
+                margin: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Lecciones sobre los Sustantivos</h1>
+    </header>
+    
+    <nav>
+        <a href="#leccion1">Lección 1</a>
+        <a href="#leccion2">Lección 2</a>
+        <a href="#leccion3">Lección 3</a>
+        <a href="#leccion4">Lección 4</a>
+        <a href="#leccion5">Lección 5</a>
+        <a href="#leccion6">Lección 6</a>
+        <a href="#leccion7">Lección 7</a>
+    </nav>
+    
+    <main>
+        <div id="leccion1" class="contenido">
+            <h1><b>Lección 1:</b> ¿Qué es un sustantivo?</h1>
+            <div class="texto">
+                <p>Un sustantivo (en inglés, noun) es una palabra que se usa para nombrar una persona, lugar, cosa o idea. Los sustantivos son una de las partes más fundamentales de cualquier oración, ya que casi siempre son el sujeto o el objeto de la acción.</p>
+                <h3>Tipos de sustantivos en inglés:</h3>
+                <b>Sustantivos concretos:</b><br>
+                <p>Son aquellos que pueden percibirse con los sentidos.</p>
+                <ul>
+                    <li>dog (perro)</li>
+                    <li>table (mesa)</li>
+                    <li>car (coche)</li>
+                </ul>
+                <b>Sustantivos abstractos:</b><br>
+                <p>Son aquellos que no se pueden ver ni tocar, ya que representan ideas, emociones o conceptos.</p>
+                <ul>
+                    <li>happiness (felicidad)</li>
+                    <li>love (amor)</li>
+                    <li>freedom (libertad)</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div id="leccion2" class="contenido">
+            <h1><b>Lección 2:</b> Género y número de los sustantivos</h1>
+            <div class="texto">
+                <h2>1. Género:</h2>
+                <p>En inglés, los sustantivos generalmente no tienen género gramatical como en español (masculino o femenino). Sin embargo, hay algunas excepciones en las que los sustantivos se refieren explícitamente a un género:</p>
+                <ul>
+                    <li>Masculino: father (padre), man (hombre), brother (hermano).</li>
+                    <li>Femenino: mother (madre), woman (mujer), sister (hermana).</li>
+                    <li>Neutro: teacher (maestro/a), student (estudiante), friend (amigo/a).</li>
+                </ul>
+    
+                <h2>2. Número:</h2>
+                <p>Los sustantivos pueden estar en singular o plural.</p>
+                <p>Para formar el plural de la mayoría de los sustantivos, se agrega -s al final:</p>
+                <ul>
+                    <li>dog → dogs.</li>
+                    <li>box → boxes.</li>
+                    <li>city → cities.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div id="leccion3" class="contenido">
+            <h1><b>Lección 3:</b> Tipos de sustantivos</h1>
+            <div class="texto">
+                <h2>Sustantivos contables (countable nouns):</h2>
+                <p>Son aquellos que pueden contarse, es decir, tienen forma singular y plural.</p>
+                <ul>
+                    <li>apple (manzana) → apples (manzanas).</li>
+                </ul>
+                <p>Se pueden usar con "a" o "an" en singular.</p>
+    
+                <h2>Sustantivos incontables (uncountable nouns):</h2>
+                <p>Son aquellos que no se pueden contar individualmente, como líquidos, materiales, conceptos abstractos, etc.</p>
+                <ul>
+                    <li>water (agua)</li>
+                    <li>milk (leche)</li>
+                    <li>advice (consejo)</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div id="leccion4" class="contenido">
+            <h1><b>Lección 4:</b> Uso de artículos con sustantivos</h1>
+            <div class="texto">
+                <h2>Artículo definido: the</h2>
+                <p>Se utiliza para hablar de algo específico o conocido.</p>
+                <p>Ejemplo: <b>The book on the table is mine.</b> (El libro sobre la mesa es mío.)</p>
+    
+                <h2>Artículos indefinidos: a y an</h2>
+                <p>Se usan para hablar de algo en general, no específico.</p>
+                <ul>
+                    <li>a se usa antes de palabras que empiezan con un sonido consonántico. Ejemplo: <b>a car, a dog.</b></li>
+                    <li>an se usa antes de palabras que empiezan con un sonido vocal. Ejemplo: <b>an apple, an hour.</b></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div id="leccion5" class="contenido">
+            <h1><b>Lección 5:</b> Sustantivos colectivos</h1>
+            <div class="texto">
+                <p>Los sustantivos colectivos se utilizan para referirse a un grupo o conjunto de cosas o personas.</p>
+                <ul>
+                    <li>family (familia)</li>
+                    <li>team (equipo)</li>
+                    <li>class (clase)</li>
+                    <li>crowd (multitud)</li>
+                    <li>flock (banda, en el caso de aves o animales)</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div id="leccion6" class="contenido">
+            <h1><b>Lección 6:</b> Sustantivos propios y comunes</h1>
+            <div class="texto">
+                <h2>Sustantivos comunes:</h2>
+                <ul>
+                    <li>city (ciudad)</li>
+                    <li>teacher (maestro)</li>
+                    <li>dog (perro)</li>
+                </ul>
+                <h2>Sustantivos propios:</h2>
+                <ul>
+                    <li>London (Londres)</li>
+                    <li>John (Juan)</li>
+                    <li>Google</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div id="leccion7" class="contenido">
+            <h1><b>Lección 7:</b> Plural de sustantivos irregulares</h1>
+            <div class="texto">
+                <p>Algunos sustantivos tienen plurales irregulares y no siguen las reglas estándar de añadir -s o -es:</p>
+                <ul>
+                    <li>child → children</li>
+                    <li>man → men</li>
+                    <li>woman → women</li>
+                    <li>foot → feet</li>
+                    <li>tooth → teeth</li>
+                    <li>mouse → mice</li>
+                    <li>cactus → cacti</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    
+    <div class="quiz">
+        <h2>Practice Questions</h2>
+    
+        <!-- Pregunta 1 -->
+        <div class="question">1. What is a noun?</div>
+        <div class="answers">
+            <label><input type="radio" name="q1" value="a"> A) A verb that describes an action</label><br>
+            <label><input type="radio" name="q1" value="b"> B) A word that names a person, place, thing, or idea</label><br>
+            <label><input type="radio" name="q1" value="c"> C) A word that describes how someone feels</label><br>
+            <label><input type="radio" name="q1" value="d"> D) A word that indicates a relationship between objects</label>
+        </div>
+        <div id="answer1" class="answer"></div>
+    
+        <!-- Pregunta 2 -->
+        <div class="question">2. Which of the following is an example of a concrete noun?</div>
+        <div class="answers">
+            <label><input type="radio" name="q2" value="a"> A) Love</label><br>
+            <label><input type="radio" name="q2" value="b"> B) Happiness</label><br>
+            <label><input type="radio" name="q2" value="c"> C) Dog</label><br>
+            <label><input type="radio" name="q2" value="d"> D) Freedom</label>
+        </div>
+        <div id="answer2" class="answer"></div>
+    
+        <!-- Pregunta 3 -->
+        <div class="question">3. How would you form the plural of the word "box"?</div>
+        <div class="answers">
+            <label><input type="radio" name="q3" value="a"> A) Boxs</label><br>
+            <label><input type="radio" name="q3" value="b"> B) Boxes</label><br>
+            <label><input type="radio" name="q3" value="c"> C) Boxies</label><br>
+            <label><input type="radio" name="q3" value="d"> D) Boxes'</label>
+        </div>
+        <div id="answer3" class="answer"></div>
+    
+        <!-- Pregunta 4 -->
+        <div class="question">4. Which of the following is an uncountable noun?</div>
+        <div class="answers">
+            <label><input type="radio" name="q4" value="a"> A) Book</label><br>
+            <label><input type="radio" name="q4" value="b"> B) Child</label><br>
+            <label><input type="radio" name="q4" value="c"> C) Water</label><br>
+            <label><input type="radio" name="q4" value="d"> D) Apple</label>
+        </div>
+        <div id="answer4" class="answer"></div>
+    
+        <!-- Pregunta 5 -->
+        <div class="question">5. What article do you use with the word "orange"?</div>
+        <div class="answers">
+            <label><input type="radio" name="q5" value="a"> A) A</label><br>
+            <label><input type="radio" name="q5" value="b"> B) An</label><br>
+            <label><input type="radio" name="q5" value="c"> C) The</label><br>
+            <label><input type="radio" name="q5" value="d"> D) No article is needed</label>
+        </div>
+        <div id="answer5" class="answer"></div>
+    
+        <!-- Pregunta 6 -->
+        <div class="question">6. How do you form the plural of the word "baby"?</div>
+        <div class="answers">
+            <label><input type="radio" name="q6" value="a"> A) Babys</label><br>
+            <label><input type="radio" name="q6" value="b"> B) Babies</label><br>
+            <label><input type="radio" name="q6" value="c"> C) Babie</label><br>
+            <label><input type="radio" name="q6" value="d"> D) Babbies</label>
+        </div>
+        <div id="answer6" class="answer"></div>
+    
+        <!-- Pregunta 7 -->
+        <div class="question">7. Which collective noun is used to refer to a group of birds?</div>
+        <div class="answers">
+            <label><input type="radio" name="q7" value="a"> A) Pack</label><br>
+            <label><input type="radio" name="q7" value="b"> B) Group</label><br>
+            <label><input type="radio" name="q7" value="c"> C) Flock</label><br>
+            <label><input type="radio" name="q7" value="d"> D) Family</label>
+        </div>
+        <div id="answer7" class="answer"></div>
+    
+        <!-- Pregunta 8 -->
+        <div class="question">8. What is the plural of "man"?</div>
+        <div class="answers">
+            <label><input type="radio" name="q8" value="a"> A) Mans</label><br>
+            <label><input type="radio" name="q8" value="b"> B) Manes</label><br>
+            <label><input type="radio" name="q8" value="c"> C) Men</label><br>
+            <label><input type="radio" name="q8" value="d"> D) Mice</label>
+        </div>
+        <div id="answer8" class="answer"></div>
+    
+        <!-- Pregunta 9 -->
+        <div class="question">9. Which of the following is a proper noun?</div>
+        <div class="answers">
+            <label><input type="radio" name="q9" value="a"> A) country</label><br>
+            <label><input type="radio" name="q9" value="b"> B) teacher</label><br>
+            <label><input type="radio" name="q9" value="c"> C) Paris</label><br>
+            <label><input type="radio" name="q9" value="d"> D) chair</label>
+        </div>
+        <div id="answer9" class="answer"></div>
+    </div>
+    
+    </main> <!-- Cierre de main -->
+    
+    <footer>
+        <p>&copy; 2024 Lecciones de Sustantivos</p>
+    </footer>
+    
+    <script>
+        // Funciones para verificar respuestas de las preguntas
+        function checkAnswer(question, correctAnswer) {
+            document.querySelectorAll(`input[name="${question}"]`).forEach((elem) => {
+                elem.addEventListener('change', () => {
+                    console.log(`Pregunta: ${question}, Respuesta seleccionada: ${document.querySelector(`input[name="${question}"]:checked`).value}`);
+                    if (document.querySelector(`input[name="${question}"]:checked`).value === correctAnswer) {
+                        document.getElementById(`answer${question.charAt(1)}`).textContent = "¡Correct.";
+                        document.getElementById(`answer${question.charAt(1)}`).style.color = "green";
+                    } else {
+                        document.getElementById(`answer${question.charAt(1)}`).textContent = "Incorrect. ";
+                        document.getElementById(`answer${question.charAt(1)}`).style.color = "red";
+                    }
+                });
+            });
+        }
+    
+        // Llamada a la función para cada pregunta
+        checkAnswer("q1", "b");
+        checkAnswer("q2", "c");
+        checkAnswer("q3", "b");
+        checkAnswer("q4", "c");
+        checkAnswer("q5", "b");
+        checkAnswer("q6", "b");
+        checkAnswer("q7", "c");
+        checkAnswer("q8", "c");
+        checkAnswer("q9", "c");
+    </script>
+    
+    </body>
+    </html>
+    

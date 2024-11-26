@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <style>
+        /* Diseño del cuerpo de la página */
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Estilo para la caja de login */
+        .login-box {
+            background-color: rgba(169, 169, 169, 0.1); /* Gris muy suave */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        /* Estilo para los campos de usuario y contraseña */
+        .login-box input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        /* Estilo para el botón de entrar */
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: green;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Cambio de color al pasar el mouse sobre el botón */
+        .login-box button:hover {
+            background-color: #4CAF50;
+        }
+
+        /* Estilo para el mensaje de error */
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>Iniciar sesión</h2>
+        <form id="loginForm">
+            <input type="text" id="usuario" placeholder="Usuario" required>
+            <input type="password" id="contraseña" placeholder="Contraseña" required>
+            <button type="button" onclick="validarCredenciales()">Entrar</button>
+            <p id="error-message" class="error"></p>
+        </form>
+    </div>
+
+    <script>
+        // Credenciales predefinidas
+        const usuarioValido = "itzcoatl";
+        const contraseñaValida = "vidaurri";
+
+        function validarCredenciales() {
+            // Obtener los valores ingresados por el usuario
+            const usuarioIngresado = document.getElementById("usuario").value;
+            const contraseñaIngresada = document.getElementById("contraseña").value;
+
+            // Validar si las credenciales son correctas
+            if (usuarioIngresado === usuarioValido && contraseñaIngresada === contraseñaValida) {
+                alert("¡Bienvenido! Has iniciado sesión correctamente.");
+                // Redirigir a otra página o realizar otras acciones
+                window.location.href = "ingles.html"; // Puedes cambiar la URL de destino
+            } else {
+                // Mostrar mensaje de error si las credenciales son incorrectas
+                document.getElementById("error-message").innerText = "Usuario o contraseña incorrectos.";
+            }
+        }
+    </script>
+</body>
+</html>

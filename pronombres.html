@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pronombres</title>
+    <style>
+        /* Estilos globales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f8fa;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Cabecera */
+        header {
+            background-color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background-color: #34495e;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            padding: 8px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #1abc9c;
+            border-radius: 4px;
+        }
+
+        /* Estilo principal */
+        .contenido {
+            margin: 40px auto;
+            padding: 40px;
+            max-width: 1100px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #2980b9;
+        }
+
+        .texto {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #7f8c8d;
+        }
+
+        .texto ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .texto p {
+            margin-bottom: 15px;
+        }
+
+        /* Estilo de pie de página */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Resposividad para dispositivos móviles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 26px;
+            }
+
+            nav a {
+                font-size: 16px;
+                margin: 0 10px;
+            }
+
+            .contenido {
+                padding: 20px;
+                margin: 20px;
+            }
+        }
+
+        /* Sección de preguntas */
+        .quiz {
+            margin: 40px auto;
+            padding: 40px;
+            max-width: 1100px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        .question {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .answers label {
+            font-size: 16px;
+            color: #7f8c8d;
+            display: block;
+            margin-bottom: 10px;
+            padding: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .answers label:hover {
+            background-color: #ecf0f1;
+            border-radius: 4px;
+        }
+
+        .answers input {
+            margin-right: 10px;
+        }
+
+        .answer {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #16a085;
+        }
+
+        .answer.incorrect {
+            color: #e74c3c;
+        }
+
+        /* Resposividad para dispositivos móviles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 26px;
+            }
+
+            nav a {
+                font-size: 16px;
+                margin: 0 10px;
+            }
+
+            .contenido, .quiz {
+                padding: 20px;
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Lecciones sobre los Pronombres</h1>
+    </header>
+    
+    <nav>
+        <a href="#leccion1">Lección 1</a>
+        <a href="#leccion2">Lección 2</a>
+        <a href="#leccion3">Lección 3</a>
+        <a href="#leccion4">Lección 4</a>
+        <a href="#leccion5">Lección 5</a>
+        <a href="#leccion6">Lección 6</a>
+        <a href="#leccion7">Lección 7</a>
+    </nav>
+    
+    <main>
+        <div id="leccion1" class="contenido">
+            <h1><b>Lección 1:</b> ¿Qué es un pronombre?</h1>
+            <div class="texto">
+                <p>Un pronombre es una palabra que se utiliza para sustituir a un sustantivo en una oración. Los pronombres permiten evitar la repetición de sustantivos y hacen las oraciones más fluidas y naturales.</p>
+            </div>
+        </div>
+    
+        <div id="leccion2" class="contenido">
+            <h1><b>Lección 2:</b> Pronombres posesivos</h1>
+            <div class="texto">
+                <p>Los pronombres posesivos indican propiedad o posesión. Se utilizan para reemplazar un sustantivo y mostrar que algo pertenece a alguien.</p>
+            </div>
+        </div>
+    
+        <div id="leccion3" class="contenido">
+            <h1><b>Lección 3:</b> Pronombres reflexivos</h1>
+            <div class="texto">
+                <p>Los pronombres reflexivos se utilizan cuando el sujeto y el objeto de la oración son la misma persona o cosa. Se forman añadiendo “-self” (singular) o “-selves” (plural) al pronombre personal.</p>
+            </div>
+        </div>
+    
+        <div id="leccion4" class="contenido">
+            <h1><b>Lección 4:</b> Pronombres demostrativos</h1>
+            <div class="texto">
+                <p>Los pronombres demostrativos se usan para señalar o identificar a algo o alguien en particular, y se refieren a la cercanía o lejanía en relación al hablante.</p>
+            </div>
+        </div>
+    
+        <div id="leccion5" class="contenido">
+            <h1><b>Lección 5:</b> Pronombres relativos</h1>
+            <div class="texto">
+                <p>Los pronombres relativos se usan para unir dos oraciones y hacer referencia a un sustantivo mencionado previamente.</p>
+            </div>
+        </div>
+    
+        <div id="leccion6" class="contenido">
+            <h1><b>Lección 6:</b> Pronombres interrogativos</h1>
+            <div class="texto">
+                <p>Los pronombres interrogativos se utilizan para formular preguntas. Son aquellos que se usan para obtener información sobre una persona, lugar o cosa.</p>
+            </div>
+        </div>
+    
+        <div id="leccion7" class="contenido">
+            <h1><b>Lección 7:</b> Pronombres indefinidos</h1>
+            <div class="texto">
+                <p>Los pronombres indefinidos son aquellos que se usan para hablar de algo de manera general o imprecisa, sin especificar a qué o quién se refiere.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Sección de cuestionario -->
+    <div class="quiz">
+        <h2>Practice Questions</h2>
+    
+        <div class="question" id="question1">
+            What is the possessive pronoun for "my" in English?
+            <div class="answers">
+                <label><input type="radio" name="q1" onclick="checkAnswer(1, 'my')"> my</label>
+                <label><input type="radio" name="q1" onclick="checkAnswer(1, 'your')"> your</label>
+                <label><input type="radio" name="q1" onclick="checkAnswer(1, 'their')"> their</label>
+            </div>
+            <div class="answer" id="answer1"></div>
+        </div>
+    
+        <div class="question" id="question2">
+            What is the reflexive pronoun for "he"?
+            <div class="answers">
+                <label><input type="radio" name="q2" onclick="checkAnswer(2, 'himself')"> himself</label>
+                <label><input type="radio" name="q2" onclick="checkAnswer(2, 'herself')"> herself</label>
+                <label><input type="radio" name="q2" onclick="checkAnswer(2, 'itself')"> itself</label>
+            </div>
+            <div class="answer" id="answer2"></div>
+        </div>
+    
+        <div class="question" id="question3">
+            Which pronoun would you use to refer to "these things"?
+            <div class="answers">
+                <label><input type="radio" name="q3" onclick="checkAnswer(3, 'these')"> these</label>
+                <label><input type="radio" name="q3" onclick="checkAnswer(3, 'those')"> those</label>
+                <label><input type="radio" name="q3" onclick="checkAnswer(3, 'it')"> it</label>
+            </div>
+            <div class="answer" id="answer3"></div>
+        </div>
+    
+        <div class="question" id="question4">
+            What is the relative pronoun for "the girl you saw yesterday"?
+            <div class="answers">
+                <label><input type="radio" name="q4" onclick="checkAnswer(4, 'who')"> who</label>
+                <label><input type="radio" name="q4" onclick="checkAnswer(4, 'that')"> that</label>
+                <label><input type="radio" name="q4" onclick="checkAnswer(4, 'whom')"> whom</label>
+            </div>
+            <div class="answer" id="answer4"></div>
+        </div>
+    
+        <div class="question" id="question5">
+            What is the interrogative pronoun for "what"?
+            <div class="answers">
+                <label><input type="radio" name="q5" onclick="checkAnswer(5, 'what')"> what</label>
+                <label><input type="radio" name="q5" onclick="checkAnswer(5, 'who')"> who</label>
+                <label><input type="radio" name="q5" onclick="checkAnswer(5, 'which')"> which</label>
+            </div>
+            <div class="answer" id="answer5"></div>
+        </div>
+    
+        <div class="question" id="question6">
+            What is the indefinite pronoun for "someone"?
+            <div class="answers">
+                <label><input type="radio" name="q6" onclick="checkAnswer(6, 'someone')"> someone</label>
+                <label><input type="radio" name="q6" onclick="checkAnswer(6, 'everyone')"> everyone</label>
+                <label><input type="radio" name="q6" onclick="checkAnswer(6, 'no one')"> no one</label>
+            </div>
+            <div class="answer" id="answer6"></div>
+        </div>
+    
+        <div class="question" id="question7">
+            What is the possessive pronoun for "his" (from him) in English?
+            <div class="answers">
+                <label><input type="radio" name="q7" onclick="checkAnswer(7, 'his')"> his</label>
+                <label><input type="radio" name="q7" onclick="checkAnswer(7, 'her')"> her</label>
+                <label><input type="radio" name="q7" onclick="checkAnswer(7, 'its')"> its</label>
+            </div>
+            <div class="answer" id="answer7"></div>
+        </div>
+    
+        <div class="question" id="question8">
+            Which pronoun would you use for "they"?
+            <div class="answers">
+                <label><input type="radio" name="q8" onclick="checkAnswer(8, 'they')"> they</label>
+                <label><input type="radio" name="q8" onclick="checkAnswer(8, 'we')"> we</label>
+                <label><input type="radio" name="q8" onclick="checkAnswer(8, 'you')"> you</label>
+            </div>
+            <div class="answer" id="answer8"></div>
+        </div>
+    
+        <div class="question" id="question9">
+            What is the reflexive pronoun for "we"?
+            <div class="answers">
+                <label><input type="radio" name="q9" onclick="checkAnswer(9, 'ourselves')"> ourselves</label>
+                <label><input type="radio" name="q9" onclick="checkAnswer(9, 'themselves')"> themselves</label>
+                <label><input type="radio" name="q9" onclick="checkAnswer(9, 'yourself')"> yourself</label>
+            </div>
+            <div class="answer" id="answer9"></div>
+        </div>
+    
+    </div>
+    
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Lecciones de Inglés</p>
+    </footer>
+
+    <script>
+        function checkAnswer(questionId, answer) {
+            const correctAnswers = {
+                1: 'my',
+                2: 'himself',
+                3: 'these',
+                4: 'who',
+                5: 'what',
+                6: 'someone',
+                7: 'his',
+                8: 'they',
+                9: 'ourselves'
+            };
+
+            const correctAnswer = correctAnswers[questionId];
+            const answerElement = document.getElementById('answer' + questionId);
+
+            if (answer === correctAnswer) {
+                answerElement.textContent = '¡Correct.';
+                answerElement.style.color="green";
+                answerElement.className = 'answer correct';
+            } else {
+                answerElement.textContent = 'Incorrect.' ;
+                answerElement.style.color="red";
+                answerElement.className = 'answer incorrect';
+            }
+        }
+    </script>
+
+</body>
+</html>

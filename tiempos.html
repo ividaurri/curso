@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tiempos Verbales</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f8fa;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #34495e;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            padding: 8px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #1abc9c;
+            border-radius: 4px;
+        }
+
+        /* Main content */
+        .content {
+            margin: 40px auto;
+            padding: 40px;
+            max-width: 1100px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #2980b9;
+        }
+
+        .text {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #7f8c8d;
+        }
+
+        .text ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .text p {
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Quiz Section */
+        .quiz {
+            margin: 40px auto;
+            padding: 40px;
+            max-width: 1100px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        .question {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .answers label {
+            font-size: 16px;
+            color: #7f8c8d;
+            display: block;
+            margin-bottom: 10px;
+            padding: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .answers label:hover {
+            background-color: #ecf0f1;
+            border-radius: 4px;
+        }
+
+        .answers input {
+            margin-right: 10px;
+        }
+
+        .answer {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #16a085;
+        }
+
+        .answer.incorrect {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Lecciones de Tiempos Verbales</h1>
+    </header>
+    
+    <nav>
+        <a href="#lesson1">Lección 1</a>
+        <a href="#lesson2">Lección 2</a>
+        <a href="#lesson3">Lección 3</a>
+        <a href="#lesson4">Lección 4</a>
+        <a href="#lesson5">Lección 5</a>
+        <a href="#lesson6">Lección 6</a>
+        <a href="#lesson7">Lección 7</a>
+    </nav>
+    
+    <main>
+        <!-- Lección 1 Content -->
+        <div id="lesson1" class="content">
+            <h1><b>Lección 1:</b> El presente simple</h1>
+            <div class="text">
+                <p>El presente simple se utiliza para hablar de acciones que ocurren regularmente o hechos que son siempre ciertos.</p>
+                <ul>
+                    <li>Ejemplo: I work every day. (Yo trabajo todos los días.)</li>
+                    <li>La estructura es: <b> sujeto + verbo en su forma base </b></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lección 2 Content -->
+        <div id="lesson2" class="content">
+            <h1><b>Lección 2:</b> El pasado simple</h1>
+            <div class="text">
+                <p>El pasado simple se usa para hablar de acciones que ocurrieron en un momento específico del pasado.</p>
+                <ul>
+                    <li>Ejemplo: I visited Paris last year. (Visité París el año pasado.)</li>
+                    <li>La estructura es: <b> sujeto + verbo en pasado </b></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lección 3 Content -->
+        <div id="lesson3" class="content">
+            <h1><b>Lección 3:</b> El futuro simple</h1>
+            <div class="text">
+                <p>El futuro simple se usa para hablar de acciones que ocurrirán en el futuro.</p>
+                <ul>
+                    <li>Ejemplo: I will travel to Spain next year. (Viajaré a España el próximo año.)</li>
+                    <li>La estructura es: <b> sujeto + will + verbo en su forma base </b></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lección 4 Content -->
+        <div id="lesson4" class="content">
+            <h1><b>Lección 4:</b> El presente continuo</h1>
+            <div class="text">
+                <p>El presente continuo se usa para hablar de acciones que están ocurriendo en el momento de hablar.</p>
+                <ul>
+                    <li>Ejemplo: I am studying right now. (Estoy estudiando ahora mismo.)</li>
+                    <li>La estructura es: <b> sujeto + verbo "to be" + verbo con "-ing" </b></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lección 5 Content -->
+        <div id="lesson5" class="content">
+            <h1><b>Lección 5:</b> El pasado continuo</h1>
+            <div class="text">
+                <p>El pasado continuo se usa para hablar de una acción que estaba ocurriendo en un momento específico del pasado.</p>
+                <ul>
+                    <li>Ejemplo: I was reading when you called me. (Estaba leyendo cuando me llamaste.)</li>
+                    <li>La estructura es: <b> sujeto + verbo "to be" en pasado + verbo con "-ing" </b></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lección 6 Content -->
+        <div id="lesson6" class="content">
+            <h1><b>Lección 6:</b> El futuro continuo</h1>
+            <div class="text">
+                <p>El futuro continuo se usa para hablar de una acción que estará ocurriendo en el futuro.</p>
+                <ul>
+                    <li>Ejemplo: I will be working at 8 PM. (Estaré trabajando a las 8 PM.)</li>
+                    <li>La estructura es: <b> sujeto + will be + verbo con "-ing" </b></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lección 7 Content -->
+        <div id="lesson7" class="content">
+            <h1><b>Lección 7:</b> El presente perfecto</h1>
+            <div class="text">
+                <p>El presente perfecto se usa para hablar de acciones que ocurrieron en un momento no específico en el pasado y tienen relevancia en el presente.</p>
+                <ul>
+                    <li>Ejemplo: I have finished my homework. (He terminado mi tarea.)</li>
+                    <li>La estructura es: <b> sujeto + have/has + verbo en participio </b></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Quiz Section -->
+        <div class="quiz">
+            <h2>Test de Conocimiento</h2>
+
+            <!-- Pregunta 1 -->
+            <div class="question">Which sentence is correct?</div>
+            <div class="answers">
+                <label><input type="radio" name="answer1" value="a"> I works every day.</label>
+                <label><input type="radio" name="answer1" value="b"> I work every day.</label>
+                <label><input type="radio" name="answer1" value="c"> I worked every day.</label>
+            </div>
+            <div class="answer" id="answer1"></div>
+
+            <!-- Pregunta 2 -->
+            <div class="question">Which sentence is in the past tense?</div>
+            <div class="answers">
+                <label><input type="radio" name="answer2" value="a"> I am studying.</label>
+                <label><input type="radio" name="answer2" value="b"> I study every day.</label>
+                <label><input type="radio" name="answer2" value="c"> I studied yesterday.</label>
+            </div>
+            <div class="answer" id="answer2"></div>
+
+            <!-- Pregunta 3 -->
+            <div class="question">What is the correct future form?</div>
+            <div class="answers">
+                <label><input type="radio" name="answer3" value="a"> I will traveling tomorrow.</label>
+                <label><input type="radio" name="answer3" value="b"> I will travel tomorrow.</label>
+                <label><input type="radio" name="answer3" value="c"> I travels tomorrow.</label>
+            </div>
+            <div class="answer" id="answer3"></div>
+
+            <!-- Pregunta 4 -->
+            <div class="question">Which sentence is in the present continuous tense?</div>
+            <div class="answers">
+                <label><input type="radio" name="answer4" value="a"> I am study now.</label>
+                <label><input type="radio" name="answer4" value="b"> I studying now.</label>
+                <label><input type="radio" name="answer4" value="c"> I am studying now.</label>
+            </div>
+            <div class="answer" id="answer4"></div>
+
+            <!-- Pregunta 5 -->
+            <div class="question">Which sentence uses the past continuous correctly?</div>
+            <div class="answers">
+                <label><input type="radio" name="answer5" value="a"> I was study when you called.</label>
+                <label><input type="radio" name="answer5" value="b"> I was studying when you called.</label>
+                <label><input type="radio" name="answer5" value="c"> I studying when you called.</label>
+            </div>
+            <div class="answer" id="answer5"></div>
+
+            <!-- Pregunta 6 -->
+            <div class="question">Which sentence is in the future continuous tense?</div>
+            <div class="answers">
+                <label><input type="radio" name="answer6" value="a"> I will work at 9 PM.</label>
+                <label><input type="radio" name="answer6" value="b"> I will be working at 9 PM.</label>
+                <label><input type="radio" name="answer6" value="c"> I worked at 9 PM.</label>
+            </div>
+            <div class="answer" id="answer6"></div>
+
+            <!-- Pregunta 7 -->
+            <div class="question">Which sentence uses the present perfect tense?</div>
+            <div class="answers">
+                <label><input type="radio" name="answer7" value="a"> I has eaten lunch.</label>
+                <label><input type="radio" name="answer7" value="b"> I have eaten lunch.</label>
+                <label><input type="radio" name="answer7" value="c"> I am eating lunch.</label>
+            </div>
+            <div class="answer" id="answer7"></div>
+
+            <!-- Pregunta 8 -->
+            <div class="question">Which sentence is in the correct past form?</div>
+            <div class="answers">
+                <label><input type="radio" name="answer8" value="a"> I worked every day last year.</label>
+                <label><input type="radio" name="answer8" value="b"> I working every day last year.</label>
+                <label><input type="radio" name="answer8" value="c"> I was worked every day last year.</label>
+            </div>
+            <div class="answer" id="answer8"></div>
+
+            <!-- Pregunta 9 -->
+            <div class="question">Which sentence is correct for the future tense?</div>
+            <div class="answers">
+                <label><input type="radio" name="answer9" value="a"> I will go to the party.</label>
+                <label><input type="radio" name="answer9" value="b"> I going to the party.</label>
+                <label><input type="radio" name="answer9" value="c"> I goes to the party.</label>
+            </div>
+            <div class="answer" id="answer9"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lecciones de Tiempos Verbales</p>
+    </footer>
+
+    <script>
+        // Quiz answer validation
+        const answers = document.querySelectorAll('input[type="radio"]');
+        answers.forEach(answer => {
+            answer.addEventListener('click', function() {
+                const questionId = answer.name;
+                const userAnswer = document.querySelector(`input[name="${questionId}"]:checked`).value;
+                const correctAnswer = getCorrectAnswer(questionId);
+
+                const resultElement = document.getElementById(questionId);
+                if (userAnswer === correctAnswer) {
+                    resultElement.textContent = "Correct.";
+                    resultElement.style.color = "green";
+                    resultElement.classList.remove('incorrect');
+                    resultElement.classList.add('correct');
+                } else {
+                    resultElement.textContent = "Incorrect. ";
+                    resultElement.style.color = "red";
+                    resultElement.classList.remove('correct');
+                    resultElement.classList.add('incorrect');
+                }
+            });
+        });
+
+        function getCorrectAnswer(questionId) {
+            const correctAnswers = {
+                "answer1": "b", "answer2": "c", "answer3": "b", "answer4": "c",
+                "answer5": "b", "answer6": "b", "answer7": "b", "answer8": "a",
+                "answer9": "a"
+            };
+            return correctAnswers[questionId];
+        }
+
+        function getAnswerText(answer) {
+            const answersText = {
+                "a": "I work every day.", "b": "I work every day.", "c": "I worked every day.",
+                "a": "I studied yesterday.", "b": "I studied yesterday.", "c": "I studied yesterday."
+            };
+            return answersText[answer];
+        }
+    </script>
+</body>
+</html>
